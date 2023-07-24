@@ -1,0 +1,7 @@
+.Calendar {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
