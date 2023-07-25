@@ -1,5 +1,5 @@
 import Calendar from "./Calendar.jsx";
-import './App.css';
+import './styles.css';
 
 export default function App() {
 
@@ -33,7 +33,15 @@ export default function App() {
   return (
     <div className="App">
       <h1>React Calendar</h1>
-      <Calendar days={days} dates={dates} />
+      <div className="Calendar">
+        {dates.map((t, index) => (
+          <Calendar 
+            index={index}
+            days={days[index % 7].name}
+            dates={t}
+          />
+        ))}
+      </div>
     </div>
   );
 }

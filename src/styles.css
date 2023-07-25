@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Calendar {
+  display: grid;
+  justify-self: center;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 100vw;
+  gap: 10px;
+}
+
+.Tiles {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: orange;
+  border-radius: 2vmin;
+  border: 0.4vmin solid grey;
+  height: 14vmin;
+  text-align: center;
+  min-width: 20%;
+  width: 95%;
+  transition: 1s;
+}
+
+.Date {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 5vmin;
+}
+.Day {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 2rem;
+}
